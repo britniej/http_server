@@ -49,6 +49,7 @@ app.post('/add', function(req, res){
 
 // start server
 // -----------------------
-app.listen(3000, function(){
-    console.log('Running on port 3000!')
-})
+app.listen(process.env.PORT || 5000)
+, function(){
+    console.log('Running on port 5000!')
+}
