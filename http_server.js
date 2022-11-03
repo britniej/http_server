@@ -23,7 +23,7 @@ app.use(express.static('public'));
 db.defaults({ users: []}).write();
 
 // return all users
-app.get('/data', function(req, res){     
+app.get('/accounts', function(req, res){     
     res.send(db.get('users').value());
 });
 
